@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "javaplay.App",
+            "projectName": "javaplayground"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "javaplayground.src.main.java.javaplay.App",
+            "projectName": "javaplayground_452cdd5b"
+        }
+    ]
+}
