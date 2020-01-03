@@ -6,7 +6,17 @@ public class Person{
     private String eyeColor;
     private String gender;
 
+
     public Person(){
         //do something
+    }
+
+    public Person(String name, int age, int height, int weight, String eyeColor, String gender){
+        this.name = name;
+        this.age = age;
+        this.height = height;
+        this.weight = weight;
+        this.eyeColor = eyeColor;
+        this.gender = gender;
     }
 }
