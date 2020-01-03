@@ -5,4 +5,8 @@ public class Person{
     private int weight;
     private String eyeColor;
     private String gender;
+
+    public Person(){
+        //do something
+    }
 }
