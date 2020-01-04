@@ -1,5 +1,9 @@
+package javaplay;
+
+import java.util.Objects;
+
 public class Person {
-    private Sting name;
+    private String name;
     private int age;
     private int height;
     private int weight;
@@ -21,11 +25,11 @@ public class Person {
 
    
 
-    public Sting getName() {
+    public String getName() {
         return this.name;
     }
 
-    public void setName(Sting name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -69,7 +73,7 @@ public class Person {
         this.gender = gender;
     }
 
-    public Person name(Sting name) {
+    public Person name(String name) {
         this.name = name;
         return this;
     }
