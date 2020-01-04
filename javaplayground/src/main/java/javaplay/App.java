@@ -10,24 +10,14 @@ public class App {
         System.out.println("Hello World!");
     }
 
-    // arrays review
 
-    public static void primitiveCounterparts(){
-        //Every primitive type in the java lan has a jdk couterpart class
-
-        /*
-        Primitive	    JDK counterpart
-        boolean	        java.lang.Boolean
-        byte	        java.lang.Byte
-        char	        java.lang.Character
-        short	        java.lang.Short
-        int	            java.lang.Integer
-        long	        java.lang.Long
-        float	        java.lang.Float
-        double	        java.lang.Double
-        */
+    // Array List Review
+    public static void ArrList() {
+        
+        
     }
 
+    // arrays review  
     public static void Arrays() {
 
         // create the array with a certain size which is fixed for life of the array
@@ -58,6 +48,32 @@ public class App {
         }
 
     }
+
+    public static void primitiveCounterparts(){
+        //Every primitive type in the java lan has a jdk couterpart class
+
+        /*
+        Primitive	    JDK counterpart
+        boolean	        java.lang.Boolean
+        byte	        java.lang.Byte
+        char	        java.lang.Character
+        short	        java.lang.Short
+        int	            java.lang.Integer
+        long	        java.lang.Long
+        float	        java.lang.Float
+        double	        java.lang.Double
+
+        Each JDK class provides methods to parse and 
+        convert from its internal representation to a 
+        corresponding primitive type. For example, 
+        this code converts the decimal value 238 to an Integer:
+        */
+
+
+        int value = 238;
+        Integer boxedValue = Integer.valueOf(value);
+    }
+
 
     public static<T> void displayArray(T[] array) {
         System.out.println("");
