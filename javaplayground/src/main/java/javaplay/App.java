@@ -25,6 +25,10 @@ public class App {
 
         Map<String, Integer> mapOfIntegers = new HashMap<>();
         mapOfIntegers.put("1", Integer.valueOf(1));
+        mapOfIntegers.put("2", Integer.valueOf(2));
+        mapOfIntegers.put("3", Integer.valueOf(3));
+        //...
+        mapOfIntegers.put("168", Integer.valueOf(168));
         
     }
 
