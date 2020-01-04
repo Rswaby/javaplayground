@@ -12,6 +12,22 @@ public class App {
 
     // arrays review
 
+    public static void primitiveCounterparts(){
+        //Every primitive type in the java lan has a jdk couterpart class
+
+        /*
+        Primitive	    JDK counterpart
+        boolean	        java.lang.Boolean
+        byte	        java.lang.Byte
+        char	        java.lang.Character
+        short	        java.lang.Short
+        int	            java.lang.Integer
+        long	        java.lang.Long
+        float	        java.lang.Float
+        double	        java.lang.Double
+        */
+    }
+
     public static void Arrays() {
 
         // create the array with a certain size which is fixed for life of the array
@@ -33,6 +49,13 @@ public class App {
         Integer[] integers3 = {1,2,3,4,5};
         
         displayArray(integers3);
+
+        /////////////////Another Wayy to Init arrays\\\\\\\\\\\\\\\\
+
+        int[] arrayInt = new int[5];
+        for (int i = 0; i < arrayInt.length; i++) {
+            arrayInt[i] = i+1;            
+        }
 
     }
 
