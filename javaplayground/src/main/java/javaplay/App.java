@@ -20,15 +20,16 @@ public class App {
 
     //sets
     public static void setOfStuff() {
-
-        Set<Integer> setOfIntegers = new HashSet<>();
-
+        
+        Set<Integer> setOfIntegers = new HashSet();
         setOfIntegers.add(Integer.valueOf(10));
-        setOfIntegers.add(Integer.valueOf(22));
-        setOfIntegers.add(Integer.valueOf(10));
-
-        for (Integer val:setOfIntegers){
-            System.out.print(val);
+        setOfIntegers.add(Integer.valueOf(20));
+        setOfIntegers.add(Integer.valueOf(30));
+        setOfIntegers.add(Integer.valueOf(40));
+        setOfIntegers.add(Integer.valueOf(50));
+        Logger l = Logger.getLogger("Test");
+        for (Integer i : setOfIntegers) {
+        l.info("Integer value is : " + i);
         }
         
     }
