@@ -1,8 +1,10 @@
 package javaplay;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.logging.Logger;
 
@@ -16,6 +18,14 @@ public class App {
         ArrList();
         setOfStuff();
         System.out.println("Hello World!");
+    }
+    //Maps
+
+    public static void MapPractice() {
+
+        Map<String, Integer> mapOfIntegers = new HashMap<>();
+        mapOfIntegers.put("1", Integer.valueOf(1));
+        
     }
 
     //sets
