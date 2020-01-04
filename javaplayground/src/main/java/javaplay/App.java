@@ -2,6 +2,7 @@ package javaplay;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * Hello world!
@@ -10,6 +11,7 @@ import java.util.List;
 public class App {
     public static void main(String[] args) {
         Arrays();
+        ArrList();
         System.out.println("Hello World!");
     }
 
@@ -18,8 +20,22 @@ public class App {
     public static void ArrList() {
         //List is an interface so we canit instantiate it directly
         List<String> listofStrings = new ArrayList<>();
-        List<Object> listOfObjects = new ArrayList<Object>();
+        List<Integer> listOfIntegers = new ArrayList<Integer>();
         List<Person> listOfPersons = new ArrayList<Person>();
+
+        listOfPersons.add(new Person());
+        listOfIntegers.add(Integer.valueOf(90));
+        listofStrings.add("Another String");
+
+        //add() method adds the element to the end of the list
+        
+        //List<Integer> listOfIntegers = new ArrayList<>();
+        listOfIntegers.add(Integer.valueOf(238));
+        Logger l = Logger.getLogger("Test");
+        l.info("Size of listOfIntegers "+listOfIntegers.size());
+        l.info("Item at index 0 is: " + listOfIntegers.get(0));
+
+
 
 
     }
