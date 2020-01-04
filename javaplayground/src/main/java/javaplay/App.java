@@ -1,5 +1,8 @@
 package javaplay;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Hello world!
  *
@@ -13,8 +16,7 @@ public class App {
 
     // Array List Review
     public static void ArrList() {
-        
-        
+        List<String> listofStrings = new ArrayList<>();
     }
 
     // arrays review  
