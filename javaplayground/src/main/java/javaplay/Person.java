@@ -1,5 +1,4 @@
 package javaplay;
-
 import java.util.Objects;
 
 public class Person {
