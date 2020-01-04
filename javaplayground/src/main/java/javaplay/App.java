@@ -22,19 +22,21 @@ public class App {
         /// new elementType arraySize;
 
         // creates an empty array of 5 elements:
-        int[] integers = new int[5];
-        System.out.println(integers);
+        Integer[] integers = new Integer[5];
+        // System.out.println(integers);
+        displayArray(integers);
 
     }
 
-    public static void displayArray(int[] array) {
-
+    public static<T> void displayArray(T[] array) {
+        System.out.println("");
         System.out.print("[");
-        for (int element : array) {
+        for (T element : array) {
             System.out.print(" ");
             System.out.print(element);
         }
         System.out.print(" ]");
+        System.out.println("");
 
     }
 }
