@@ -16,7 +16,12 @@ public class App {
 
     // Array List Review
     public static void ArrList() {
+        //List is an interface so we canit instantiate it directly
         List<String> listofStrings = new ArrayList<>();
+        List<Object> listOfObjects = new ArrayList<Object>();
+        List<Person> listOfPersons = new ArrayList<Person>();
+
+
     }
 
     // arrays review  
