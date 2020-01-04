@@ -30,6 +30,10 @@ public class App {
 
         displayArray(integers2);
 
+        Integer[] integers3 = {1,2,3,4,5};
+        
+        displayArray(integers3);
+
     }
 
     public static<T> void displayArray(T[] array) {
