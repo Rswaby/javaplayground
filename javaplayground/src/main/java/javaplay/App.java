@@ -1,7 +1,9 @@
 package javaplay;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.logging.Logger;
 
 /**
@@ -12,8 +14,25 @@ public class App {
     public static void main(String[] args) {
         Arrays();
         ArrList();
+        setOfStuff();
         System.out.println("Hello World!");
     }
+
+    //sets
+    public static void setOfStuff() {
+
+        Set<Integer> setOfIntegers = new HashSet<>();
+
+        setOfIntegers.add(Integer.valueOf(10));
+        setOfIntegers.add(Integer.valueOf(22));
+        setOfIntegers.add(Integer.valueOf(10));
+
+        for (Integer val:setOfIntegers){
+            System.out.print(val);
+        }
+        
+    }
+
 
 
     // Array List Review
