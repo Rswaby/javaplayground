@@ -26,6 +26,10 @@ public class App {
         // System.out.println(integers);
         displayArray(integers);
 
+        Integer[] integers2 = new Integer[] {1,2,3,4,5};
+
+        displayArray(integers2);
+
     }
 
     public static<T> void displayArray(T[] array) {
