@@ -1,4 +1,8 @@
-public class User{
+package javaplay;
+
+import java.util.Objects;
+
+public class User {
     private String username;
     private String email;
     
