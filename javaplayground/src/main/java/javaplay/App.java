@@ -29,6 +29,15 @@ public class App {
         mapOfIntegers.put("3", Integer.valueOf(3));
         //...
         mapOfIntegers.put("168", Integer.valueOf(168));
+
+
+        Set<String> keys = mapOfIntegers.keySet();
+        Logger l = Logger.getLogger("Test");
+        for (String key : keys) {
+        Integer  value = mapOfIntegers.get(key);
+        l.info("Value keyed by '" + key + "' is '" + value + "'");
+}
+        
         
     }
 
