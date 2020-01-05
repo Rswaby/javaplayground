@@ -8,6 +8,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.logging.Logger;
 
+import javaplay.CTCI.Chapter1;
+
 /**
  * Hello world!
  *
@@ -18,6 +20,7 @@ public class App {
         ArrList();
         setOfStuff();
         System.out.println("Hello World!");
+        Chapter1.isUnique("hello");
     }
     //Maps
 
