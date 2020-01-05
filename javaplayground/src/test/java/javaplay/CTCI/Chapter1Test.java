@@ -15,10 +15,6 @@ public class Chapter1Test{
     public void isUnqueTest()
 
     {
-        Integer v = Integer.valueOf(0);
-        v +=4;
-        //System.out.print("value: "+ type(v));
-
         assertTrue("isUniqueTest: ",Chapter1.isUnique("abc123"));
         assertTrue("Not unique", !Chapter1.isUnique("aaaa"));
     }
@@ -26,7 +22,9 @@ public class Chapter1Test{
     @Test
     public void checkPermutationTest()
     {
-        assertTrue( true );
+        
+        assertTrue("Is A Permutation", Chapter1.checkPermutation("rohan", "ronha") );
+        assertTrue("Not a Permuttion", !Chapter1.checkPermutation("rohan", "rohen"));
     }
 
 

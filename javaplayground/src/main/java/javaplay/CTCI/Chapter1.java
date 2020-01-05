@@ -31,12 +31,25 @@ public class Chapter1 {
         for (Character element : str1.toCharArray()) {
             
             if (str1map.containsKey(element)){
-                str1map.put(element, Integer.valueOf(str1map.get(element) + 1));
+                str1map.put(element, str1map.get(element) + 1);
             }else{
-                //str1map.put(element, )
+                str1map.put(element, Integer.valueOf(1));
             }
+
         }
-        return true;
+
+        for (Character element : str2.toCharArray()) {
+            
+            if (str2map.containsKey(element)){
+                str2map.put(element, str2map.get(element) + 1);
+            }else{
+                str2map.put(element, Integer.valueOf(1));
+            }
+            
+        }
+
+        
+        return str1map.equals(str2map);
     }
 
     public static String URLify() {
