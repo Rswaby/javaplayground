@@ -16,4 +16,17 @@ public class Chapter1Test{
     {
         assertTrue( true );
     }
+
+    @Test
+    public void checkPermutationTest()
+    {
+        assertTrue( true );
+    }
+
+
+    @Test
+    public void URLifyTest()
+    {
+        assertTrue( true );
+    }
 }
