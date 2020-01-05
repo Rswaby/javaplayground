@@ -1,5 +1,7 @@
 package javaplay;
+
 import java.util.Objects;
+import java.util.logging.Logger;
 
 public class Person {
     private String name;
@@ -129,4 +131,30 @@ public class Person {
             ", gender='" + getGender() + "'" +
             "}";
     }
+    
+public void printAudit(StringBuilder buffer) {
+    buffer.append("Name=");
+    buffer.append(getName());
+    buffer.append(",");
+    buffer.append("Age=");
+    buffer.append(getAge());
+    buffer.append(",");
+    buffer.append("Height=");
+    buffer.append(getHeight());
+    buffer.append(",");
+    buffer.append("Weight=");
+    buffer.append(getWeight());
+    buffer.append(",");
+    buffer.append("EyeColor=");
+    buffer.append(getEyeColor());
+    buffer.append(",");
+    buffer.append("Gender=");
+    buffer.append(getGender());
+ }
+ 
+ public void printAudit(Logger l) {
+    StringBuilder sb = new StringBuilder();
+    printAudit(sb);
+    l.info(sb.toString());
+ }
 }
