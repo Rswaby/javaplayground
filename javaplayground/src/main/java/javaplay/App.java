@@ -20,7 +20,7 @@ public class App {
         ArrList();
         setOfStuff();
         System.out.println("Hello World!");
-        Chapter1.isUnique("hello");
+        Chapter1.isUnique("");
     }
     //Maps
 
