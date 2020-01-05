@@ -31,15 +31,30 @@ public class Employee extends Person {
     public void setSalary(BigDecimal salary) {
         this.salary = salary;
     }
-  
-    public Employee(){
+
+    public Employee() {
         super();
         // Auto‑generated constructor stub
     }
 
-    public Employee(String name, int age, int height, 
-    int weight, String eyeColor, String gender){
+    public Employee(String name, int age, int height, int weight, String eyeColor, String gender) {
         super(name, age, height, weight, eyeColor, gender);
         // Auto-generted constructor
+    }
+
+    @Override
+    public void printAudit(StringBuilder buffer) {
+        // Call the superclass version of this method first to get its attribute values
+        super.printAudit(buffer);
+
+        // Now format this instance's values
+        buffer.append("TaxpayerIdentificationNumber=");
+        buffer.append(getTaxpayerIdentificationNumber());
+        buffer.append(",");
+        buffer.append("EmployeeNumber=");
+        buffer.append(getEmployeeNumber());
+        buffer.append(",");
+        buffer.append("Salary=");
+        buffer.append(getSalary().setScale(2).toPlainString());
     }
 }
