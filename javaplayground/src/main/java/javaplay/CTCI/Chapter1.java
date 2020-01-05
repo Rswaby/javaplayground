@@ -1,6 +1,8 @@
 package javaplay.CTCI;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class Chapter1 {
@@ -18,7 +20,22 @@ public class Chapter1 {
     }
 
     public static Boolean checkPermutation(String str1, String str2) {
+        
+        if (str1.length() != str2.length()){
+            return false;
+        }
+        
+        Map<Character,Integer> str1map = new HashMap<>();
+        Map<Character,Integer> str2map = new HashMap<>();
 
+        for (Character element : str1.toCharArray()) {
+            
+            if (str1map.containsKey(element)){
+                str1map.put(element, Integer.valueOf(str1map.get(element) + 1));
+            }else{
+                //str1map.put(element, )
+            }
+        }
         return true;
     }
 
