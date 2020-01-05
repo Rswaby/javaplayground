@@ -14,7 +14,8 @@ public class Chapter1Test{
     @Test
     public void isUnqueTest()
     {
-        assertTrue( true );
+        assertTrue("isUniqueTest: ",Chapter1.isUnique("abc123"));
+        assertTrue("Not unique", !Chapter1.isUnique("aaaa"));
     }
 
     @Test
