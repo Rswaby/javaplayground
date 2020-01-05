@@ -41,6 +41,7 @@ public class Employee extends Person {
         super(name, age, height, weight, eyeColor, gender);
         // Auto-generted constructor
     }
+    
 
     @Override
     public void printAudit(StringBuilder buffer) {
@@ -57,4 +58,6 @@ public class Employee extends Person {
         buffer.append("Salary=");
         buffer.append(getSalary().setScale(2).toPlainString());
     }
+
+
 }

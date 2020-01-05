@@ -39,4 +39,24 @@ public class EmployeeTest {
         l.info("Q: employee1 == employee2 ? A: " + (employee1 == employee2));
         l.info("Q: employee1.equals(employee2) ? A : " + employee1.equals(employee2));
     }
+
+    @Test
+    public void yetAnotherTest() {
+        Logger l = Logger.getLogger(Employee.class.getName());
+
+        // Employee employee1 = new Employee();
+        try {
+            Employee employee1 = null;
+            employee1.setName("J Smith");
+            Employee employee2 = new Employee();
+            employee2.setName("J Smith");
+            l.info("Q: employee1 == employee2?      A: " + (employee1 == employee2));
+            l.info("Q: employee1.equals(employee2)? A: " + employee1.equals(employee2));
+        } catch (Exception e) {
+            l.severe("Caught exception: " + e.getMessage());
+        } finally {
+            // Always executes
+            l.info("Test Completed :)");
+        }
+    }
 }
