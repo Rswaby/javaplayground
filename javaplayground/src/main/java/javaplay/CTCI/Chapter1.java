@@ -52,9 +52,18 @@ public class Chapter1 {
         return str1map.equals(str2map);
     }
 
-    public static String URLify() {
+    public static String URLify(String str) {
 
-        return "";
+        StringBuilder result = new StringBuilder();
+
+        for (char ch : str.toCharArray()) {
+            if (ch == ' '){
+                result.append("%20");
+            }else{
+                result.append(ch);
+            }
+        }
+        return new String(result);
     }
 
 }
