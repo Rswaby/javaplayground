@@ -2,6 +2,12 @@ package javaplay.CTCI;
 
 public class TreeNode{
 
-    public String name;
-    public TreeNode[] children;
+    public int val;
+    public TreeNode left = null;
+    public TreeNode right = null;
+
+    public TreeNode(int val) {
+        this.val = val;
+        
+    }
 }
