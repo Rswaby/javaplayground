@@ -61,6 +61,9 @@ public class Chapter2 {
          * 
          */
 
+         if (middle == null || middle.next == null) return false; 
+         
+
          Node next = middle.next;
          middle.val = next.val;
          middle.next = next.next;
