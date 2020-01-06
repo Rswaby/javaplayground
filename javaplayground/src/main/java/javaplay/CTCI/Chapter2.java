@@ -36,6 +36,27 @@ public class Chapter2{
 
     }
 
+    public static int KthtoLast(Node head, int k) {
+
+        Node fast = head;
+        Node slow = head;
+
+        for (int _ = 0; _ < k+1; _++) {
+            fast = fast.next;           
+        }
+
+        while(fast.next != null){
+            fast = fast.next;
+            slow = slow.next;
+        }
+
+        return slow.val;
+
+
+
+        
+    }
+
 
 
 }
