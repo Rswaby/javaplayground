@@ -6,11 +6,11 @@ import java.util.Set;
 
 public class Chapter2 {
 
-    public static Node deleteNode(Node head, int target) {
+    public static ListNode deleteNode(ListNode head, int target) {
 
         if (head.val == target)
             return head.next;
-        Node curr = head;
+        ListNode curr = head;
 
         while (curr.next != null) {
             if (curr.val == target) {
@@ -22,10 +22,10 @@ public class Chapter2 {
 
     }
 
-    public static Node removeDuplicates(Node head) {
+    public static ListNode removeDuplicates(ListNode head) {
 
         Set<Integer> buff = new HashSet<>();
-        Node curr = head;
+        ListNode curr = head;
         while (curr.next != null) {
             if (buff.contains(curr.val)) {
                 curr.next = curr.next.next;
@@ -37,10 +37,10 @@ public class Chapter2 {
 
     }
 
-    public static int KthtoLast(Node head, int k) {
+    public static int KthtoLast(ListNode head, int k) {
 
-        Node fast = head;
-        Node slow = head;
+        ListNode fast = head;
+        ListNode slow = head;
 
         for (int _ = 0; _ < k + 1; _++) {
             fast = fast.next;
@@ -55,16 +55,16 @@ public class Chapter2 {
 
     }
 
-    public static Boolean deleteMiddleNode(Node middle) {
+    public static Boolean deleteMiddleNode(ListNode middle) {
         /*
-         * given the middle node return the list that makes it appears to be deletedd
+         * given the middle ListNode return the list that makes it appears to be deletedd
          * 
          */
 
          if (middle == null || middle.next == null) return false; 
          
 
-         Node next = middle.next;
+         ListNode next = middle.next;
          middle.val = next.val;
          middle.next = next.next;
 
