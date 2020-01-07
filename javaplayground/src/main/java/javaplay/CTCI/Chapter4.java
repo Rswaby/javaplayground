@@ -42,6 +42,12 @@ public class Chapter4 {
          */
         Set<String> visited = new HashSet<>();
         Queue<String> queue = new LinkedList<>();
+
+        visited.add(source);
+        queue.add(source);
+
+        
+
         return false;
     }
 }
