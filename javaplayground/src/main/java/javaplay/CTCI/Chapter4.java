@@ -46,7 +46,18 @@ public class Chapter4 {
         visited.add(source);
         queue.add(source);
 
-        
+        while( !queue.isEmpty() ){
+            //dequeue
+            String node = queue.poll();
+            for (String neighbour : graph.get(node)) {
+                if (destNode.equals(neighbour)) return true;
+                if (!visited.contains(neighbour)){
+                    visited.add(neighbour);
+                    queue.add(neighbour);
+                }
+            }
+        }
+
 
         return false;
     }
