@@ -46,19 +46,38 @@ public class Chapter4 {
         visited.add(source);
         queue.add(source);
 
-        while( !queue.isEmpty() ){
-            //dequeue
+        while (!queue.isEmpty()) {
+            // dequeue
             String node = queue.poll();
             for (String neighbour : graph.get(node)) {
-                if (destNode.equals(neighbour)) return true;
-                if (!visited.contains(neighbour)){
+                if (destNode.equals(neighbour))
+                    return true;
+                if (!visited.contains(neighbour)) {
                     visited.add(neighbour);
                     queue.add(neighbour);
                 }
             }
         }
 
-
         return false;
+    }
+
+    public void listDepth(TreeNode root, ArrayList<LinkedList<TreeNode>> lists, int level) {
+
+        if (root == null)
+            return;
+        LinkedList<TreeNode> list = null;
+        if (lists.size() == level) {
+            // not at level yet
+            list = new LinkedList<TreeNode>();
+            lists.add(list);
+
+        } else {
+            list = lists.get(level);
+        }
+
+        list.add(root);
+        listDepth(root.left, lists, level+1);
+        listDepth(root.right, lists, level+1);
     }
 }
