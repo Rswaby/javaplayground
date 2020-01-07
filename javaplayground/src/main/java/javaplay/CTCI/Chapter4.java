@@ -1,10 +1,14 @@
 package javaplay.CTCI;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+//import java.util.HashSet;
+
 public class Chapter4 {
 
     public static void inOrder(TreeNode root) {
 
-        if(root != null){
+        if (root != null) {
             inOrder(root.left);
             System.out.println(root.val);
             inOrder(root.right);
@@ -12,23 +16,30 @@ public class Chapter4 {
         ///
     }
 
-    public static void preOrder(TreeNode root){
-        if(root != null){
+    public static void preOrder(TreeNode root) {
+        if (root != null) {
             System.out.print(root.val);
             preOrder(root.left);
             preOrder(root.right);
         }
     }
 
-    public static void postOrder(TreeNode root){
-        if(root != null){
+    public static void postOrder(TreeNode root) {
+        if (root != null) {
             postOrder(root.left);
             postOrder(root.right);
             System.out.print(root.val);
         }
     }
 
-    public static void RouteToNode() {
+    public static Boolean RouteToNode(String source, String destNode, 
+    HashMap<String,ArrayList<String>> graph) {
+        /*
+         * graph = {
+         *  "A": ["B","D","A"]
+         *  }
+         */
 
+        return false;
     }
 }
