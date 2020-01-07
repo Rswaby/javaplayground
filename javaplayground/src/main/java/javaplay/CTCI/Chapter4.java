@@ -3,6 +3,10 @@ package javaplay.CTCI;
 import java.util.ArrayList;
 import java.util.HashMap;
 //import java.util.HashSet;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Set;
 
 public class Chapter4 {
 
@@ -32,14 +36,12 @@ public class Chapter4 {
         }
     }
 
-    public static Boolean RouteToNode(String source, String destNode, 
-    HashMap<String,ArrayList<String>> graph) {
+    public static Boolean RouteToNode(String source, String destNode, HashMap<String, ArrayList<String>> graph) {
         /*
-         * graph = {
-         *  "A": ["B","D","A"]
-         *  }
+         * graph = { "A": ["B","D","A"] }
          */
-
+        Set<String> visited = new HashSet<>();
+        Queue<String> queue = new LinkedList<>();
         return false;
     }
 }
