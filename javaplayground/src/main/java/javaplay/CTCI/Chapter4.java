@@ -32,7 +32,8 @@ public class Chapter4 {
         }
     }
 
-    public static Boolean RouteToNode(String source, String destNode, Graph graph) {
+    public static Boolean RouteToNode(String source, String destNode, 
+    HashMap<String,ArrayList<String>> graph) {
         /*
          * graph = {
          *  "A": ["B","D","A"]
